@@ -1,0 +1,126 @@
+html 
+{
+    font-family: 'Lucida Sans'
+}
+
+body
+ {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+
+}
+
+header
+ {
+    background-color: black;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    display: flex;
+    
+}
+
+h3
+ {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+header a
+ {
+    text-decoration: none;
+    color: white;
+
+}
+
+header nav ul 
+{
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li
+ {
+    margin-left: 20px;
+}
+
+header nav ul li a
+ {
+    text-decoration: none;
+    color: white;
+
+}
+
+section
+ {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+section article
+ {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 300px;
+    margin: 5px;
+}
+
+section article p
+ {
+    font-size: 10px;
+    text-align: center;
+    color: #79767670;
+}
+
+section article img 
+{
+    width: 100%;
+}
+
+@media(max-width: 670px)
+ {
+
+    header nav ul {
+        flex-direction: column;
+
+    }
+
+    section
+     {
+        flex-direction: column;
+        grid-template-columns: repeat(1, 2fr);
+        
+    }
+
+    section article
+     {
+        font-size: 20px;
+        flex: 1 0 35%;
+    }
+
+    nav li 
+    {
+        text-align: left;
+        padding-left: 10px;
+        font-size: 22px;
+        background-color: rgb(77, 77, 77);
+        margin: 10px 0;
+        margin-right: 5px;
+    }
+
+    section article p 
+    {
+        font-size: medium;
+    }
+
+    .Logo
+     {
+        font-size: 40px;
+    }
+
+
+}
